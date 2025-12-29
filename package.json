@@ -1,0 +1,22 @@
+{
+  "name": "batio-app",
+  "version": "vip",
+  "description": "Cops & Cops",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "João Carvalho| The dev",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.4",
+    "discord-webhook-node": "^1.1.8",
+    "electron": "^22.0.3",
+    "express": "^4.18.2",
+    "firebase": "^9.16.0",
+    "fs": "^0.0.1-security",
+    "https-proxy-agent": "^5.0.1",
+    "jsonfile-promised": "^0.0.1",
+    "node-fetch": "^3.3.0"
+  }
+}

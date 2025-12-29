@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BatIO VIP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/slider.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="relogio-principal"></h1>
+    <img src="./assets/logo.png" alt="logo" id="logo">
+  </header>
+  <main>
+    <aside>
+      <form action="#" name="card">
+        <h2>CARTÃO</h2>
+        <input id="card-number" name="card-name" placeholder="Nº Cartão" maxlength="16" minlength="13" required autocomplete="off">
+        <input type="text" id="card-name" name="card-name" placeholder="Nome no Cartão" required autocomplete="off">
+        <select id="month-validate" >
+          <option value="wrong" selected>Mês validade</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <select id="year-validate" >
+          <option value="wrong" selected>Ano validade</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+          <option value="2031">2031</option>
+          <option value="2032">2032</option>
+          <option value="2033">2033</option>
+          <option value="2034">2034</option>
+          <option value="2035">2035</option>
+          <option value="2036">2036</option>
+          <option value="2037">2037</option>
+          <option value="2038">2038</option>
+          <option value="2039">2039</option>
+          <option value="2040">2040</option>
+        </select>
+        <input id="card-cvv" name="card-cvv" placeholder="CVV" maxlength="4" minlength="3" pattern="[0-9]+$" required autocomplete="off">
+        <select id="card-bandeira" >
+          <option value="wrong" selected>Bandeira</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="elo">Elo</option>
+          <option value="visa">Visa</option>
+          <option value="amex" >Amex</option>
+          <option value="hipercard">Hipercard</option>
+          <option value="diners">Diners</option>
+        </select>
+        <button type="submit">
+          <img src="./assets/button_add.svg" class="button-save-card">
+        </button>
+      </form>
+
+      <div class="web-proxy">
+        <form action="">
+          <input type="text" placeholder="INSIRA WEBHOOK" id="campo-texto-webhook">
+          <button type="submit">
+            <img src="./assets/button_add.svg" alt="Adicionar o Webhook" id="webhook-button">
+          </button>
+        </form>
+        <form action="">
+          <input type="text" placeholder="PROXY" id="campo-texto-proxy">
+          <button type="submit">
+            <img src="./assets/button_add.svg" alt="Adicionar o Proxy" id="proxy-button-add">
+            <img src="./assets/trash.svg" alt="Deletar lista" id="proxy-button-delete-all">
+          </button>
+        </form>
+      </div>
+
+    </aside>
+    <section id="token">
+      <form action="#" id="new-token">
+        <input type="text" placeholder="Token da conta" name="add-token" id="campo-token-da-conta">
+        <button type="submit">
+          <img src="./assets/button_add.svg" alt="Botão add token" id="botao-salva-token-conta">
+        </button>
+      </form>
+
+      <form action="#" id="form-cookie">
+        <div class="header-form-cookie">
+          <h2>COOKIES</h2>
+          <input type="text" placeholder="Inserir cookie: _abck" id="campo-inserir-cookies-abck">
+          <input type="text" placeholder="Inserir cookie: bm_sz" id="campo-inserir-cookies-bmsz">
+          <button type="submit">
+            <img src="./assets/button_add.svg" alt="Adicionar o Cookies" id="botao-adicionar-cookies">
+            <img src="./assets/trash.svg" alt="Deletar Cookies" id="botao-deletar-todos-cookies">
+          </button>
+        </div>
+        <button type="submit" class="check-amount-cookies" id="botao-checar-todas-infos">Checar todas informações</button>
+      </form>
+
+      <div class="terminal">
+        <h3>Status:</h3>
+        <p id="console"></p>
+      </div>
+
+    </section>
+    <section id="modos">
+      <h2>
+        MODOS
+      </h2>
+
+      <div class="box-modos">
+        <div class="box-modos-line">
+          <label for="drop">DROP</label>
+          <input type="text" placeholder="HORÁRIO INICIAR" id="horario-inicio-drop" name="horario-inicio-drop">
+        </div>
+
+        <div class="box-modos-line">
+          <label for="drop-proxy"></label>
+          <input type="text" placeholder="LINK DO PRODUTO" id="link-product" name="link-product">
+        </div>
+
+        <div class="box-modos-line">
+          <label for="drop-proxy">Proxy</label>
+          <input type="text" placeholder="SKU" id="sku-dropmode" name="sku-dropmode">
+        </div>
+
+        
+
+        <div class="box-modos-line">
+          <label class="switch">
+            <input type="checkbox" id="check-drop">
+            <span class="slider round"></span>
+          </label>
+          <div>
+            <img src="./assets/play.svg" alt="play drop" id="play-dropmode">
+          </div>
+        </div>
+      </div>
+
+      <div class="box-modos">
+        <div class="box-modos-line">
+          <label id="quicktask-label">QUICKTASK</label>
+        </div>
+
+        <div class="box-modos-line">
+          <label for="quicktask-proxy">Proxy</label>
+          <input type="text" placeholder="SKU" id="sku-quicktask-proxy" name="quicktask-proxy">
+        </div>
+
+        <div class="box-modos-line">
+          <label class="switch">
+            <input type="checkbox" id="check-quicktask">
+            <span class="slider round"></span>
+          </label>
+          <div>
+            <img src="./assets/play.svg" alt="prepare quicktask" id="prepare-quicktask">
+            <img src="./assets/play.svg" alt="play quicktask" id="play-quicktask">
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+
+
+    
+  </footer>
+
+
+  <!-- Script -->
+  <script src="./js/renderer.js"></script>
+</body>
+
+</html>
