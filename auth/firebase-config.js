@@ -1,13 +1,13 @@
 const { initializeApp } = require ('firebase/app');
 const { getAuth, signInWithEmailAndPassword } = require ("firebase/auth");
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAMr_Y4c15PM2uYGZceVtBNlczYSRA1Xgc",
-  authDomain: "batio-vip.firebaseapp.com",
+const firebaseConfig = { //get the configuration set for the firebase app
+  apiKey: "",
+  authDomain: "",
   projectId: "batio-vip",
-  storageBucket: "batio-vip.appspot.com",
-  messagingSenderId: "914944149429",
-  appId: "1:914944149429:web:c65fc717acd806d6547bfc"
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 
 };
 
