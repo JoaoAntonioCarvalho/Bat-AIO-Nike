@@ -1,4 +1,4 @@
-# 👟 Bat-AIO Nike | Legacy Automation Systems (2020-2024)
+# Bat-AIO Nike | Legacy Automation Systems (2020-2024)
 
 ### **Project Overview**
 **Bat-AIO** was a high-performance automation software (bot) specifically engineered for the Nike Brazil ecosystem. Developed over a span of 4 years, the project evolved from a lightweight CLI tool into a sophisticated desktop application designed to secure limited-edition sneakers in a highly competitive market.
@@ -7,7 +7,7 @@ The project focused on bypassing advanced anti-bot measures and outperforming gl
 
 ---
 
-## 📈 Impact & Performance
+## Impact & Performance
 * **Duration:** 4 years of continuous development and maintenance.
 * **Financial Success:** Generated over **R$ 700,000.00 (~$135,000 USD)** in revenue for a select group of 13 private clients.
 * **Efficiency:** Operated with a lean monthly infrastructure cost of approximately **R$ 500.00 (~$90 USD)**.
@@ -15,7 +15,7 @@ The project focused on bypassing advanced anti-bot measures and outperforming gl
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Runtime:** Node.js
 * **Frontend/UI:** Electron (Desktop Integration), HTML5, CSS3
 * **Backend & Auth:** Firebase Auth (User Management & Licensing)
@@ -26,7 +26,7 @@ The project focused on bypassing advanced anti-bot measures and outperforming gl
 
 ---
 
-## 🧠 Key Technical Challenges & Evolution
+## Key Technical Challenges & Evolution
 
 ### **1. Architecture Evolution**
 The project started as a **Command Line Interface (CLI)** to maximize execution speed and minimize latency. As the user base grew, it transitioned into an **Electron-based Desktop App** to provide a better user experience without sacrificing core performance.
@@ -42,7 +42,7 @@ In the world of "sneaker botting," milliseconds matter. The bot was optimized fo
 
 ---
 
-## ⚠️ Status
+## Status
 This repository serves as a **historical archive** of the project's development. The software is no longer active as the project reached its lifecycle conclusion after nearly half a decade of successful operation.
 
 ---
